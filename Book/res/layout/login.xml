@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#F5DEB3"
+    android:orientation="vertical" >
+  <TableLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      >
+     <TableRow>
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="25sp" />
+     <EditText 
+         android:id="@+id/editText1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:hint="请填写登录账号"
+         android:selectAllOnFocus="true"
+         />
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="密码"
+            android:textSize="25sp"
+            />
+        <EditText 
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请填写密码"
+            />
+    </TableRow>
+
+    
+<LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">"
+  <CheckBox 
+      android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="记住密码"/>
+  
+  <CheckBox 
+      android:id="@+id/c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="忘记密码"/>
+  </LinearLayout>
+
+  
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="25sp"/>
+   
+
+   
+</TableLayout>
+
+ </FrameLayout>
